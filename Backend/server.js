@@ -24,5 +24,9 @@ app.get('/', (req,res) => {
     res.sendFile(idxPath);
 })
 
+app.post('/login', (req,res)=>{
+    console.log(req.json());
+})
+
 app.listen(PORT, ()=> console.log(`Listening on ${PORT}`));
 
